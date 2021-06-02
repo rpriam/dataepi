@@ -1,0 +1,25 @@
+  export(rep_compute)
+  export(rep_write)
+  export(data_prepare)
+  export(data_rename)
+  export(tab_contents)
+  export(tab_desc_cont)
+  export(tab_desc_disc)
+  export(tab_desc2class_cont)
+  export(tab_tt2classes_cont)
+  export(tab_ttanova_cont)
+  export(tab_chi2all)
+  export(tab_chi2oneall)
+  export(tab_glmorr)
+  export(tab_all2x2)
+  export(viz_all2x2)
+  export(stat_relativerisk)
+  export(stat_oddsratio)
+  import(plyr)
+  importFrom("plyr", "join")
+  importFrom("graphics", "plot", "text")
+  importFrom("stats", "aggregate", "aov", "as.formula", "binomial",
+             "chisq.test", "coef", "confint", "fisher.test", "glm",
+             "kruskal.test", "median", "na.omit", "oneway.test",
+             "power.t.test", "residuals", "sd", "shapiro.test", "t.test",
+             "wilcox.test")

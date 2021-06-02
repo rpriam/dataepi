@@ -1,0 +1,14 @@
+Package: dataepi
+Version: 0.1
+Date: 2021-04-17
+Title: An R Package For Health Dataset
+Description: A set of functions for automatically generating a draft report from 
+    a health dataset in tabular form with a binary variable for the disease and 
+    any type of variable (categorical or binary, continuous or discrete) for the 
+    exposures which are the factors considered in the study.  The package should 
+    be used with cautious by checking while completing the obtained output.
+Author: R. Priam <rpriam@gmail.com>
+Maintainer: R. Priam <rpriam@gmail.com>
+Imports: MASS, car, plyr, pracma, pwr, officer, xtable
+License: GPL-3
+RoxygenNote: 7.1.1

@@ -1,3 +1,4 @@
 # vizdataepi
 
-A R package for illustrating the odds ratios and relative risks.
+A R package for the odds ratios and the relative risks.
+

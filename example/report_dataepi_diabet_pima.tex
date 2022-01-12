@@ -1,0 +1,420 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage{datetime}
+\usepackage{pdflscape}
+ 
+\author{ }
+\date{\today (\currenttime)}
+\title{Report\footnote{This document is auto-generated from the r package daatepi.} for output from health data}
+ 
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent\textbf{Main purpose:}  This report has for objective the analysis of the variable  diabet  for the disease      with the variables  npreg, bp\_pb, bmigroups, skin\_cl3\_, ped\_cl3\_, age\_cl3\_  .
+ 
+\noindent\textbf{Main results:} The final main variables are the following, npreg5, bp\_pb1, bmigroupsc\_obese, glu\_cl3\_56\_103, glu\_cl3\_129\_199, glu\_cl3\_103\_129, skin\_cl3\_24\_33, skin\_cl3\_33\_99
+\end{abstract}
+ 
+\noindent\textbf{Introduction}
+~\\
+ 
+\noindent\textit{Size of the sample}\\
+\noindent The number of rows of the dataset is equal to 532 after filtering.
+~\\
+ 
+ 
+ 
+\newpage
+\noindent \textbf{Descriptive results}
+ 
+\newpage
+\noindent \textbf{Model results}
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rllllllll}
+  \hline
+ & variable & modality & RR & I.95l\_RR & I.95r\_RR & OR & I.95l\_OR & I.95r\_OR \\ 
+  \hline
+1 & npreg & 5 & 1.1 & 0.54 & 2.251 & 1.11 & 0.52 & 2.371 \\ 
+  2 & npreg & 7 & 2.47 & 1.21 & 5.017 & 2.61 & 1.23 & 5.565 \\ 
+  3 & npreg & 0 & 1.08 & 0.7 & 1.668 & 1.1 & 0.66 & 1.823 \\ 
+  4 & npreg & 3 & 1.26 & 0.76 & 2.082 & 1.3 & 0.74 & 2.287 \\ 
+  5 & npreg & 1 & 0.52 & 0.35 & 0.79 & 0.45 & 0.27 & 0.733 \\ 
+  6 & npreg & 2 & 0.43 & 0.25 & 0.748 & 0.38 & 0.21 & 0.704 \\ 
+  7 & npreg & 9 & 3.44 & 1.38 & 8.581 & 3.62 & 1.4 & 9.353 \\ 
+  8 & npreg & 10\_17 & 3.39 & 1.75 & 6.577 & 3.73 & 1.83 & 7.606 \\ 
+  9 & npreg & 4 & 0.56 & 0.28 & 1.156 & 0.54 & 0.25 & 1.159 \\ 
+  10 & npreg & 8 & 3.72 & 1.51 & 9.171 & 3.94 & 1.54 & 10.062 \\ 
+  11 & npreg & 6 & 0.67 & 0.29 & 1.543 & 0.65 & 0.27 & 1.571 \\ 
+  12 & bp\_pb & 0 & 0.97 & 0.93 & 1.004 & 0.39 & 0.15 & 0.993 \\ 
+  13 & bp\_pb & 1 & 2.51 & 1.01 & 6.241 & 2.6 & 1.01 & 6.702 \\ 
+  14 & bmigroups & c\_obese & 1.51 & 1.35 & 1.697 & 4.02 & 2.58 & 6.273 \\ 
+  15 & bmigroups & b\_overweight & 0.57 & 0.39 & 0.837 & 0.49 & 0.31 & 0.785 \\ 
+  16 & bmigroups & a\_normal & 0.06 & 0.02 & 0.261 & 0.05 & 0.01 & 0.224 \\ 
+  17 & glu\_cl3\_ & 56\_103 & 0.24 & 0.16 & 0.374 & 0.15 & 0.09 & 0.246 \\ 
+  18 & glu\_cl3\_ & 129\_199 & 3.34 & 2.6 & 4.301 & 6.93 & 4.62 & 10.385 \\ 
+  19 & glu\_cl3\_ & 103\_129 & 0.79 & 0.6 & 1.043 & 0.71 & 0.48 & 1.055 \\ 
+  20 & skin\_cl3\_ & 24\_33 & 1.1 & 0.86 & 1.394 & 1.16 & 0.79 & 1.683 \\ 
+  21 & skin\_cl3\_ & 33\_99 & 1.78 & 1.39 & 2.279 & 2.41 & 1.64 & 3.528 \\ 
+  22 & skin\_cl3\_ & 7\_24 & 0.44 & 0.32 & 0.622 & 0.32 & 0.21 & 0.496 \\ 
+  23 & ped\_cl3\_ & middle & 0.97 & 0.75 & 1.257 & 0.96 & 0.65 & 1.407 \\ 
+  24 & ped\_cl3\_ & low & 0.53 & 0.39 & 0.727 & 0.41 & 0.27 & 0.62 \\ 
+  25 & ped\_cl3\_ & large & 1.72 & 1.36 & 2.175 & 2.34 & 1.61 & 3.42 \\ 
+  26 & age\_cl3\_ & 21\_24 & 0.29 & 0.18 & 0.458 & 0.21 & 0.12 & 0.354 \\ 
+  27 & age\_cl3\_ & 33\_81 & 1.95 & 1.55 & 2.454 & 3 & 2.03 & 4.427 \\ 
+  28 & age\_cl3\_ & 24\_33 & 1 & 0.78 & 1.275 & 1 & 0.68 & 1.471 \\ 
+   \hline
+\end{tabular}
+\caption{Results for odds ratios and relative risks with their confindence interval at 0.95\% (part 1/1)} 
+\label{tab:ro.and.rr.1}
+\end{table}
+ 
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllllllll}
+  \hline
+ & vars & or\_f & or02.5\_f & or97.5\_f & pval\_f & or\_r & or02.5\_r & or97.5\_r & pval\_r \\ 
+  \hline
+1 & (Intercept) & 0.039 & 0.005 & 0.186 & 0.000 & 0.023 & 0.004 & 0.088 & 0.000 \\ 
+  7 & npreg1 & 0.539 & 0.245 & 1.174 & 0.121 &   &   &   &   \\ 
+  8 & npreg10\_17 & 1.581 & 0.538 & 4.754 & 0.409 &   &   &   &   \\ 
+  9 & npreg2 & 0.414 & 0.171 & 0.971 & 0.046 &   &   &   &   \\ 
+  10 & npreg3 & 1.034 & 0.438 & 2.435 & 0.939 &   &   &   &   \\ 
+  11 & npreg4 & 0.437 & 0.154 & 1.179 & 0.11 &   &   &   &   \\ 
+  12 & npreg5 & 0.558 & 0.198 & 1.528 & 0.261 &   &   &   &   \\ 
+  13 & npreg6 & 0.337 & 0.103 & 1.022 & 0.061 &   &   &   &   \\ 
+  14 & npreg7 & 1.043 & 0.352 & 3.127 & 0.939 &   &   &   &   \\ 
+  15 & npreg8 & 1.459 & 0.421 & 5.452 & 0.56 &   &   &   &   \\ 
+  16 & npreg9 & 1.478 & 0.435 & 5.307 & 0.537 &   &   &   &   \\ 
+  6 & bp\_pb1 & 1.267 & 0.451 & 3.702 & 0.655 &   &   &   &   \\ 
+  4 & bmigroupsb\_overweight & 7.752 & 2.008 & 51.676 & 0.01 & 7.538 & 2.034 & 49.107 & 0.009 \\ 
+  5 & bmigroupsc\_obese & 15.226 & 4.007 & 101.19 & 0.001 & 17.796 & 5.165 & 112.168 & 0.000 \\ 
+  19 & skin\_cl3\_33\_99 & 1.208 & 0.721 & 2.026 & 0.473 &   &   &   &   \\ 
+  20 & skin\_cl3\_7\_24 & 0.911 & 0.489 & 1.696 & 0.769 &   &   &   &   \\ 
+  17 & ped\_cl3\_low & 0.281 & 0.161 & 0.482 & 0.000 & 0.304 & 0.179 & 0.508 & 0.000 \\ 
+  18 & ped\_cl3\_middle & 0.605 & 0.357 & 1.017 & 0.059 & 0.586 & 0.356 & 0.96 & 0.034 \\ 
+  2 & age\_cl3\_24\_33 & 3.238 & 1.723 & 6.315 & 0.000 & 3.222 & 1.775 & 6.074 & 0.000 \\ 
+  3 & age\_cl3\_33\_81 & 4.389 & 2.063 & 9.612 & 0.000 & 6.147 & 3.408 & 11.565 & 0.000 \\ 
+   \hline
+\end{tabular}
+\caption{Results with the multivariate regression and corresponding odds ratios with their confindence interval at 0.95\% (part 1/1)} 
+\label{tab:or.from.reglogistic.1}
+\end{table}
+ 
+\newpage
+ 
+\noindent \textbf{Discussion}
+ 
+\newpage
+\section*{Appendix 1 - Variables from data file}
+\noindent nrows=532\\
+\noindent ncols=15\\
+\noindent var y=diabet\\
+\noindent vars x(6) =npreg bp\_pb bmigroups skin\_cl3\_ ped\_cl3\_ age\_cl3\_\\
+\noindent vars cont(6) =age bp glu skin bmi ped\\
+\noindent vars disc(7) =npreg bp\_pb bmigroups glu\_cl3\_ skin\_cl3\_ ped\_cl3\_ age\_cl3\_\\
+\noindent vars int(0) =\\
+\noindent var id=id\\
+\newpage
+\pagestyle{empty}
+\begin{landscape}
+\section*{Appendix 2 - Descriptive statistics}
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlrrlll}
+  \hline
+ & var & nb\_na & nblevel & nbperlevel & propperlevel & namelevel \\ 
+  \hline
+1 & npreg & 0.00 & 11.00 & 77;116;35;79;57;41;31;28;29;20;19 & 0.14;0.22;0.07;0.15;0.11;0.08;0.06;0.05;0.05;0.04;0.04 & 0;1;10\_17;2;3;4;5;6;7;8;9 \\ 
+  2 & bp\_pb & 0.00 & 2.00 & 514;18 & 0.97;0.03 & 0;1 \\ 
+  3 & bmigroups & 0.00 & 3.00 & 64;126;342 & 0.12;0.24;0.64 & a\_normal;b\_overweight;c\_obese \\ 
+  4 & glu\_cl3\_ & 1.00 & 3.00 & 176;171;184 & 0.33;0.32;0.35 & 103\_129;129\_199;56\_103 \\ 
+  5 & skin\_cl3\_ & 2.00 & 3.00 & 187;166;177 & 0.35;0.31;0.33 & 24\_33;33\_99;7\_24 \\ 
+  6 & ped\_cl3\_ & 2.00 & 3.00 & 177;176;177 & 0.33;0.33;0.33 & large;low;middle \\ 
+  7 & age\_cl3\_ & 48.00 & 3.00 & 130;179;175 & 0.27;0.37;0.36 & 21\_24;24\_33;33\_81 \\ 
+   \hline
+\end{tabular}
+\caption{Results from description of categorical variables} 
+\label{tab:descdisc}
+\end{table}
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlrrrrrrr}
+  \hline
+ & var & median & mean & sd & min & max & nb\_na & nb \\ 
+  \hline
+1 & age & 28.00 & 31.61 & 10.76 & 21.00 & 81.00 & 0.00 & 532.00 \\ 
+  2 & bp & 72.00 & 71.51 & 12.31 & 24.00 & 110.00 & 0.00 & 532.00 \\ 
+  3 & glu & 115.00 & 121.03 & 31.00 & 56.00 & 199.00 & 0.00 & 532.00 \\ 
+  4 & skin & 29.00 & 29.18 & 10.52 & 7.00 & 99.00 & 0.00 & 532.00 \\ 
+  5 & bmi & 32.80 & 32.89 & 6.88 & 18.20 & 67.10 & 0.00 & 532.00 \\ 
+  6 & ped & 0.42 & 0.50 & 0.34 & 0.09 & 2.42 & 0.00 & 532.00 \\ 
+   \hline
+\end{tabular}
+\caption{Results from description of continuous variables} 
+\label{tab:descont}
+\end{table}
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+ & MEAN\_0 & MEAN\_1 & STD\_0 & STD\_1 & MD\_0 & MD\_1 & MIN\_0 & MIN\_1 & MAX\_0 & MAX\_1 & Nnotna\_0 & Nnotna\_1 \\ 
+  \hline
+age & 29.22 & 36.41 & 9.90 & 10.84 & 25.00 & 35.00 & 21.00 & 21.00 & 81.00 & 70.00 & 355 & 177 \\ 
+  bp & 69.91 & 74.70 & 11.90 & 12.52 & 70.00 & 74.00 & 24.00 & 30.00 & 110.00 & 110.00 & 355 & 177 \\ 
+  glu & 110.02 & 143.12 & 24.29 & 31.27 & 106.00 & 144.00 & 56.00 & 78.00 & 197.00 & 199.00 & 355 & 177 \\ 
+  skin & 27.29 & 32.98 & 10.08 & 10.40 & 27.00 & 32.00 & 7.00 & 7.00 & 60.00 & 99.00 & 355 & 177 \\ 
+  bmi & 31.43 & 35.82 & 6.55 & 6.61 & 30.90 & 34.60 & 18.20 & 22.90 & 57.30 & 67.10 & 355 & 177 \\ 
+  ped & 0.45 & 0.62 & 0.30 & 0.40 & 0.37 & 0.54 & 0.09 & 0.13 & 2.33 & 2.42 & 355 & 177 \\ 
+   \hline
+\end{tabular}
+\caption{Results from bivariate descriptions.} 
+\label{tab:descbiv}
+\end{table}
+\newpage
+\section*{Appendix 3 - Chi-square tests}
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rllrrlrlrllr}
+  \hline
+ & row & col & nbr & nbc & chi2 & df & p.val & mnij & p.val.e & pow & nb \\ 
+  \hline
+1 & diabet & npreg & 2.00 & 11.00 & 57.7900 & 10.00 & 0.0000 & 7.00 & 0.0005 & 1.0000 & 532.00 \\ 
+  2 & diabet & bmigroups & 2.00 & 3.00 & 47.6500 & 2.00 & 0.0000 & 2.00 & 0.0005 & 1.0000 & 532.00 \\ 
+  3 & diabet & glu\_cl3\_ & 2.00 & 3.00 & 109.4900 & 2.00 & 0.0000 & 20.00 & 0.0005 & 1.0000 & 531.00 \\ 
+  4 & diabet & skin\_cl3\_ & 2.00 & 3.00 & 32.8400 & 2.00 & 0.0000 & 32.00 & 0.0005 & 0.9997 & 530.00 \\ 
+  5 & diabet & ped\_cl3\_ & 2.00 & 3.00 & 25.4500 & 2.00 & 0.0000 & 37.00 & 0.0005 & 0.9970 & 530.00 \\ 
+  6 & diabet & age\_cl3\_ & 2.00 & 3.00 & 47.2800 & 2.00 & 0.0000 & 18.00 & 0.0005 & 1.0000 & 484.00 \\ 
+  7 & npreg & glu\_cl3\_ & 11.00 & 3.00 & 38.7700 & 20.00 & 0.0071 & 3.00 & 0.0060 & 0.9874 & 531.00 \\ 
+  8 & npreg & skin\_cl3\_ & 11.00 & 3.00 & 47.5800 & 20.00 & 0.0005 & 4.00 & 0.0009 & 0.9977 & 530.00 \\ 
+  9 & npreg & age\_cl3\_ & 11.00 & 3.00 & 250.2500 & 20.00 & 0.0000 & 0.00 & 0.0005 & 1.0000 & 484.00 \\ 
+  10 & bp\_pb & age\_cl3\_ & 2.00 & 3.00 & 8.4000 & 2.00 & 0.0150 & 1.00 & 0.0166 & 0.7819 & 484.00 \\ 
+  11 & bmigroups & glu\_cl3\_ & 3.00 & 3.00 & 32.5800 & 4.00 & 0.0000 & 7.00 & 0.0005 & 0.9986 & 531.00 \\ 
+  12 & bmigroups & skin\_cl3\_ & 3.00 & 3.00 & 184.6500 & 4.00 & 0.0000 & 2.00 & 0.0005 & 1.0000 & 530.00 \\ 
+  13 & bmigroups & age\_cl3\_ & 3.00 & 3.00 & 11.4800 & 4.00 & 0.0217 & 11.00 & 0.0220 & 0.8245 & 484.00 \\ 
+  14 & glu\_cl3\_ & skin\_cl3\_ & 3.00 & 3.00 & 24.1300 & 4.00 & 0.0001 & 37.00 & 0.0005 & 0.9872 & 529.00 \\ 
+  15 & glu\_cl3\_ & age\_cl3\_ & 3.00 & 3.00 & 34.0800 & 4.00 & 0.0000 & 29.00 & 0.0005 & 0.9996 & 483.00 \\ 
+  16 & skin\_cl3\_ & age\_cl3\_ & 3.00 & 3.00 & 20.1700 & 4.00 & 0.0005 & 32.00 & 0.0009 & 0.9790 & 482.00 \\ 
+   \hline
+\end{tabular}
+\caption{Results from chi2 tests for testing the link between two categorical variables. The subsample sizes are not checked. (part 1/1)} 
+\label{tab:chi2.1}
+\end{table}
+ 
+\newpage
+\section*{Appendix 4 - Tests for comparing two means (t.test)}
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlrrrrlrrrrllrr}
+  \hline
+ & var1 & median1 & mean1 & sd1 & nb1 & var2 & median2 & mean2 & sd2 & nb2 & T\_t.test (2cl) & P\_t.test (2cl) & P$<$0.05 & Power\_t.t \\ 
+  \hline
+1 & age & 25.00 & 29.22 & 9.90 & 355.00 & age & 35.00 & 36.41 & 10.84 & 177.00 & -7.4200 & 0.0000 & 1.00 & 1.00 \\ 
+  2 & bp & 70.00 & 69.91 & 11.90 & 355.00 & bp & 74.00 & 74.70 & 12.52 & 177.00 & -4.2200 & 0.0000 & 1.00 & 0.97 \\ 
+  3 & glu & 106.00 & 110.02 & 24.29 & 355.00 & glu & 144.00 & 143.12 & 31.27 & 177.00 & -12.3500 & 0.0000 & 1.00 & 1.00 \\ 
+  4 & skin & 27.00 & 27.29 & 10.08 & 355.00 & skin & 32.00 & 32.98 & 10.40 & 177.00 & -6.0100 & 0.0000 & 1.00 & 1.00 \\ 
+  5 & bmi & 30.90 & 31.43 & 6.55 & 355.00 & bmi & 34.60 & 35.82 & 6.61 & 177.00 & -7.2400 & 0.0000 & 1.00 & 1.00 \\ 
+  6 & ped & 0.37 & 0.45 & 0.30 & 355.00 & ped & 0.54 & 0.62 & 0.40 & 177.00 & -5.0200 & 0.0000 & 1.00 & 1.00 \\ 
+   \hline
+\end{tabular}
+\caption{Results from t-Student tests for comparing two means from continuous variables. The subsample sizes are not checked.} 
+\label{tab:t.test}
+\end{table}
+\newpage
+\section*{Appendix 5 - Tests for comparing several means (t.test,anova)}
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllllllll}
+  \hline
+ & var\_cont & var\_disc & test12\_vr & test12\_eq & test12\_gt & test12\_ls & test12\_wx\_eq & test12\_wx\_gq & test12\_wx\_ls \\ 
+  \hline
+1 & age & npreg &   &   &   &   &   &   &   \\ 
+  2 & bp & npreg &   &   &   &   &   &   &   \\ 
+  3 & glu & npreg &   &   &   &   &   &   &   \\ 
+  4 & skin & npreg &   &   &   &   &   &   &   \\ 
+  5 & bmi & npreg &   &   &   &   &   &   &   \\ 
+  6 & ped & npreg &   &   &   &   &   &   &   \\ 
+  7 & age & bp\_pb & 0.2771 & 0.0039 & 0.9981 & 0.0019 & 0.0004 & 0.9998 & 0.0002 \\ 
+  8 & bp & bp\_pb & 0.0318 & 0.0000 & 1.0000 & 0.0000 & 0.0000 & 1.0000 & 0.0000 \\ 
+  9 & glu & bp\_pb & 0.7598 & 0.0836 & 0.9582 & 0.0418 & 0.0401 & 0.9800 & 0.0201 \\ 
+  10 & skin & bp\_pb & 0.5660 & 0.0134 & 0.9933 & 0.0067 & 0.0120 & 0.9941 & 0.0060 \\ 
+  11 & bmi & bp\_pb & 0.0487 & 0.0099 & 0.9951 & 0.0049 & 0.0012 & 0.9994 & 0.0006 \\ 
+  12 & ped & bp\_pb & 0.8930 & 0.9000 & 0.4500 & 0.5500 & 0.7064 & 0.3532 & 0.6474 \\ 
+  13 & age & bmigroups &   &   &   &   &   &   &   \\ 
+  14 & bp & bmigroups &   &   &   &   &   &   &   \\ 
+  15 & glu & bmigroups &   &   &   &   &   &   &   \\ 
+  16 & skin & bmigroups &   &   &   &   &   &   &   \\ 
+  17 & bmi & bmigroups &   &   &   &   &   &   &   \\ 
+  18 & ped & bmigroups &   &   &   &   &   &   &   \\ 
+  19 & age & glu\_cl3\_ &   &   &   &   &   &   &   \\ 
+   \hline
+\end{tabular}
+\caption{Results from anova tests for comparing means from continuous variables (part 1). The subsample sizes are not checked. (part 1/3)} 
+\label{tab:anova.test1.1}
+\end{table}
+ 
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllllllll}
+  \hline
+ & var\_cont & var\_disc & test12\_vr & test12\_eq & test12\_gt & test12\_ls & test12\_wx\_eq & test12\_wx\_gq & test12\_wx\_ls \\ 
+  \hline
+20 & bp & glu\_cl3\_ &   &   &   &   &   &   &   \\ 
+  21 & glu & glu\_cl3\_ &   &   &   &   &   &   &   \\ 
+  22 & skin & glu\_cl3\_ &   &   &   &   &   &   &   \\ 
+  23 & bmi & glu\_cl3\_ &   &   &   &   &   &   &   \\ 
+  24 & ped & glu\_cl3\_ &   &   &   &   &   &   &   \\ 
+  25 & age & skin\_cl3\_ &   &   &   &   &   &   &   \\ 
+  26 & bp & skin\_cl3\_ &   &   &   &   &   &   &   \\ 
+  27 & glu & skin\_cl3\_ &   &   &   &   &   &   &   \\ 
+  28 & skin & skin\_cl3\_ &   &   &   &   &   &   &   \\ 
+  29 & bmi & skin\_cl3\_ &   &   &   &   &   &   &   \\ 
+  30 & ped & skin\_cl3\_ &   &   &   &   &   &   &   \\ 
+  31 & age & ped\_cl3\_ &   &   &   &   &   &   &   \\ 
+  32 & bp & ped\_cl3\_ &   &   &   &   &   &   &   \\ 
+  33 & glu & ped\_cl3\_ &   &   &   &   &   &   &   \\ 
+  34 & skin & ped\_cl3\_ &   &   &   &   &   &   &   \\ 
+  35 & bmi & ped\_cl3\_ &   &   &   &   &   &   &   \\ 
+  36 & ped & ped\_cl3\_ &   &   &   &   &   &   &   \\ 
+  37 & age & age\_cl3\_ &   &   &   &   &   &   &   \\ 
+  38 & bp & age\_cl3\_ &   &   &   &   &   &   &   \\ 
+  39 & glu & age\_cl3\_ &   &   &   &   &   &   &   \\ 
+   \hline
+\end{tabular}
+\caption{Results from anova tests for comparing means from continuous variables (part 1). The subsample sizes are not checked. (part 2/3)} 
+\label{tab:anova.test1.2}
+\end{table}
+ 
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllllllll}
+  \hline
+ & var\_cont & var\_disc & test12\_vr & test12\_eq & test12\_gt & test12\_ls & test12\_wx\_eq & test12\_wx\_gq & test12\_wx\_ls \\ 
+  \hline
+40 & skin & age\_cl3\_ &   &   &   &   &   &   &   \\ 
+  41 & bmi & age\_cl3\_ &   &   &   &   &   &   &   \\ 
+  42 & ped & age\_cl3\_ &   &   &   &   &   &   &   \\ 
+   \hline
+\end{tabular}
+\caption{Results from anova tests for comparing means from continuous variables (part 1). The subsample sizes are not checked. (part 3/3)} 
+\label{tab:anova.test1.3}
+\end{table}
+ 
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllllll}
+  \hline
+ & var\_cont & var\_disc & test\_vr & test\_aov & test\_aov\_check & test\_welch & test\_krusk \\ 
+  \hline
+1 & age & npreg & 0.0008 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  2 & bp & npreg & 0.0556 & 0.0000 & 0.0119 & 0.0000 & 0.0000 \\ 
+  3 & glu & npreg & 0.0191 & 0.0001 & 0.0000 & 0.0005 & 0.0002 \\ 
+  4 & skin & npreg & 0.0173 & 0.0123 & 0.0000 & 0.0064 & 0.0021 \\ 
+  5 & bmi & npreg & 0.0005 & 0.0001 & 0.0000 & 0.0026 & 0.0006 \\ 
+  6 & ped & npreg & 0.8106 & 0.9381 & 0.0000 & 0.9311 & 0.6470 \\ 
+  7 & age & bp\_pb &   &   &   &   &   \\ 
+  8 & bp & bp\_pb &   &   &   &   &   \\ 
+  9 & glu & bp\_pb &   &   &   &   &   \\ 
+  10 & skin & bp\_pb &   &   &   &   &   \\ 
+  11 & bmi & bp\_pb &   &   &   &   &   \\ 
+  12 & ped & bp\_pb &   &   &   &   &   \\ 
+  13 & age & bmigroups & 0.1054 & 0.0036 & 0.0000 & 0.0016 & 0.0000 \\ 
+  14 & bp & bmigroups & 0.3826 & 0.0000 & 0.0008 & 0.0000 & 0.0000 \\ 
+  15 & glu & bmigroups & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  16 & skin & bmigroups & 0.0013 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  17 & bmi & bmigroups & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  18 & ped & bmigroups & 0.4336 & 0.1524 & 0.0000 & 0.1242 & 0.0927 \\ 
+  19 & age & glu\_cl3\_ & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+   \hline
+\end{tabular}
+\caption{Results from anova tests for comparing means from continuous variables (part 2). The subsample sizes are not checked. (part 1/3)} 
+\label{tab:anova.test2.1}
+\end{table}
+ 
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllllll}
+  \hline
+ & var\_cont & var\_disc & test\_vr & test\_aov & test\_aov\_check & test\_welch & test\_krusk \\ 
+  \hline
+20 & bp & glu\_cl3\_ & 0.6391 & 0.0000 & 0.0048 & 0.0000 & 0.0000 \\ 
+  21 & glu & glu\_cl3\_ & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  22 & skin & glu\_cl3\_ & 0.7975 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  23 & bmi & glu\_cl3\_ & 0.4248 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  24 & ped & glu\_cl3\_ & 0.1412 & 0.0665 & 0.0000 & 0.0855 & 0.1242 \\ 
+  25 & age & skin\_cl3\_ & 0.0032 & 0.0001 & 0.0000 & 0.0001 & 0.0000 \\ 
+  26 & bp & skin\_cl3\_ & 0.1327 & 0.0000 & 0.0005 & 0.0000 & 0.0000 \\ 
+  27 & glu & skin\_cl3\_ & 0.0059 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  28 & skin & skin\_cl3\_ & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  29 & bmi & skin\_cl3\_ & 0.0079 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  30 & ped & skin\_cl3\_ & 0.0013 & 0.0112 & 0.0000 & 0.0228 & 0.1566 \\ 
+  31 & age & ped\_cl3\_ & 0.2100 & 0.0455 & 0.0000 & 0.0511 & 0.0216 \\ 
+  32 & bp & ped\_cl3\_ & 0.7254 & 0.5865 & 0.0038 & 0.5863 & 0.3627 \\ 
+  33 & glu & ped\_cl3\_ & 0.0072 & 0.0021 & 0.0000 & 0.0035 & 0.0133 \\ 
+  34 & skin & ped\_cl3\_ & 0.0456 & 0.1469 & 0.0000 & 0.1910 & 0.2682 \\ 
+  35 & bmi & ped\_cl3\_ & 0.5750 & 0.0556 & 0.0000 & 0.0426 & 0.1589 \\ 
+  36 & ped & ped\_cl3\_ & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  37 & age & age\_cl3\_ & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+  38 & bp & age\_cl3\_ & 0.6847 & 0.0000 & 0.0304 & 0.0000 & 0.0000 \\ 
+  39 & glu & age\_cl3\_ & 0.0037 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\ 
+   \hline
+\end{tabular}
+\caption{Results from anova tests for comparing means from continuous variables (part 2). The subsample sizes are not checked. (part 2/3)} 
+\label{tab:anova.test2.2}
+\end{table}
+ 
+\newpage
+% latex table generated in R 4.1.2 by xtable 1.8-4 package
+% Wed Jan 12 17:11:38 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllllll}
+  \hline
+ & var\_cont & var\_disc & test\_vr & test\_aov & test\_aov\_check & test\_welch & test\_krusk \\ 
+  \hline
+40 & skin & age\_cl3\_ & 0.1000 & 0.0004 & 0.0000 & 0.0003 & 0.0004 \\ 
+  41 & bmi & age\_cl3\_ & 0.0107 & 0.0219 & 0.0000 & 0.0289 & 0.0114 \\ 
+  42 & ped & age\_cl3\_ & 0.0555 & 0.0284 & 0.0000 & 0.0112 & 0.0714 \\ 
+   \hline
+\end{tabular}
+\caption{Results from anova tests for comparing means from continuous variables (part 2). The subsample sizes are not checked. (part 3/3)} 
+\label{tab:anova.test2.3}
+\end{table}
+ 
+\newpage
+\end{landscape}
+\pagestyle{plain}
+\end{document}

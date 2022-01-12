@@ -1,5 +1,7 @@
 
-From the description file :  <br /> 
+This is the release of the R code for generating reports from tabular medical datasets,
+with the odds ratios, the chi2 tests and the t-tests and anova tests. This versions does 
+not include the generation of the text, only the tables for the ORs and the tests. <br /> 
 
 A set of functions for automatically generating a draft report from <br /> 
 a health dataset in tabular form with a binary variable for the disease and <br /> 

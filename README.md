@@ -13,7 +13,7 @@ Reference  <br />
 https://hal.archives-ouvertes.fr/hal-03232091/document
 
 Note  <br />
-The code is an adaptation of the one writen when being at chu of cayenne (09/2019-08/2020) 
+The code is an adaptation of the one writen when working at chu of cayenne (09/2019-08/2020) 
 for helping medical students with their analysis and report from data and statistics. <br /> 
 Without such code, the biostatistician has to redo this each time to help someone, but this 
 is also part of epidemilogy because the non mathematical epidemiology does not work on epidemy 
